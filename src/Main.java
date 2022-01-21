@@ -1,23 +1,17 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        metoda2(metoda1());
+        method1("Mateusz");
+        method1("Mateusz", "Byczkowski" );
+        method1("Mateusz", "Byczkowski" , 21);
+    }
+    public static void method1(String name){
+        System.out.println(name);
+    }
+    public static void method1(String name, String surname){
+        System.out.println(name + " " + surname);
+    }
+    public static void method1(String name, String surname, Integer age){
+        System.out.println(name + " " + surname + " " + age);
     }
 
-    public static String[] metoda1()
-    {
-        String[] tab= new String[6];
-        Scanner input = new Scanner(System.in);
-        for (int i=0; i<6; i++){
-            System.out.println("Podaj String wartosc "+i+" w tablicy");
-            tab[i] = input.nextLine();
-        }
-        return tab;
-    }
-    public static void metoda2(String[] tablica){
-        for (int i=5; i>=0; i--){
-            System.out.print(tablica[i]+" ");
-        }
-    }
 }
