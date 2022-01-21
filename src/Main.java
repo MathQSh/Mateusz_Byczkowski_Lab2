@@ -1,24 +1,13 @@
-import java.util.*;
-
-
 public class Main {
     public static void main(String[] args) {
-        Set<Integer> set1 = new TreeSet<>();
+        int i = 1000;
+        int x = 26;
+        while (i > 0){
+            if (i%x==0)
+                System.out.println("liczba "+ i + " podzielna przez "+ x);
+            i--;
 
-        AddToSetList(set1);
-        Iterator(set1);
-    }
-    public static void AddToSetList(Set<Integer> set) {
-        Scanner input = new Scanner(System.in);
-        for(int i=0; i<10; i++){
-            set.add(input.nextInt());
         }
-    }
-    public static void Iterator(Set<Integer> set ) {
-        for (Integer i : set) {
-            System.out.print(i + ", ");
-        }
-        System.out.println();
     }
 }
 
