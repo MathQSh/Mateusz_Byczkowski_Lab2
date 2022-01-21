@@ -1,16 +1,13 @@
+import java.util.Arrays;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int x = 6;
-        int y = 26;
-        for (int i = 0; i <= 100; i++) {
-            if (i % x == 0)
-            {
-                System.out.println(i);
-            }
-            else if(i==0)
-            {
-                System.out.println(i%y);
-            }
+        Scanner in = new Scanner(System.in);
+        int[] numbers = new int[5];
+        for(int i=0;i<5;i++){
+            numbers[i] = in.nextInt()+11;
         }
+
+        Arrays.stream(numbers, 0, 5).forEach(System.out::println);
     }
 }
