@@ -1,12 +1,29 @@
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Podaj liczbę:");
-        int x = scan.nextInt();
-        switch (x % 2) {
-            case 0 -> System.out.println("Parzysta");
-            default -> System.out.println("Nieparzysta");
+        System.out.println("Pętla Continue");
+
+        for (int i =0; i<=10; i++){
+            if(i%3==0)
+                continue;
+            System.out.print(i + " ");
         }
+        System.out.println(" ");
+        System.out.println("Pętla BREAK");
+        for (int i=0; i<=100; i++)
+        {
+            if (i==22)
+                break;
+            System.out.print(i + " ");
+
+        }
+        System.out.println(" ");
+        System.out.println("Pętla Return");
+        for (int i=0; i<=100; i++)
+        {
+            if(i==33)
+                return;
+            System.out.print(i + " ");
+        }
+
     }
 }
