@@ -1,21 +1,23 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        metoda2(metoda1(20));
-
-
+        metoda2(metoda1());
     }
-    public static int[] metoda1(int zmienna){
-        int[] tab = new int[zmienna];
-        for (int i=0; i<zmienna; i++){
-            tab[i] = 40-i;
-        }
 
+    public static String[] metoda1()
+    {
+        String[] tab= new String[6];
+        Scanner input = new Scanner(System.in);
+        for (int i=0; i<6; i++){
+            System.out.println("Podaj String wartosc "+i+" w tablicy");
+            tab[i] = input.nextLine();
+        }
         return tab;
     }
-    public static void metoda2(int[] tablica){
-        for (int j : tablica) {
-            System.out.println(j);
+    public static void metoda2(String[] tablica){
+        for (int i=5; i>=0; i--){
+            System.out.print(tablica[i]+" ");
         }
     }
-
 }
