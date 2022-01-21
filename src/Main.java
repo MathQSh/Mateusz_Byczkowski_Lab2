@@ -1,29 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Pętla Continue");
+        metoda2(metoda1(20));
 
-        for (int i =0; i<=10; i++){
-            if(i%3==0)
-                continue;
-            System.out.print(i + " ");
-        }
-        System.out.println(" ");
-        System.out.println("Pętla BREAK");
-        for (int i=0; i<=100; i++)
-        {
-            if (i==22)
-                break;
-            System.out.print(i + " ");
-
-        }
-        System.out.println(" ");
-        System.out.println("Pętla Return");
-        for (int i=0; i<=100; i++)
-        {
-            if(i==33)
-                return;
-            System.out.print(i + " ");
-        }
 
     }
+    public static int[] metoda1(int zmienna){
+        int[] tab = new int[zmienna];
+        for (int i=0; i<zmienna; i++){
+            tab[i] = 40-i;
+        }
+
+        return tab;
+    }
+    public static void metoda2(int[] tablica){
+        for (int j : tablica) {
+            System.out.println(j);
+        }
+    }
+
 }
