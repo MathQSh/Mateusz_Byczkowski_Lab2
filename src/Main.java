@@ -1,11 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        String[] tab = {"?", "kota", "ma", "Ala", "Czy"};
-        int i = 4;
-        while (i >= 0){
-            System.out.println("liczba "+ tab[i]);
-            i--;
-
+        int x = 6;
+        int y = 26;
+        for (int i = 0; i <= 100; i++) {
+            if (i % x == 0)
+            {
+                System.out.println(i);
+            }
+            else if(i==0)
+            {
+                System.out.println(i%y);
+            }
         }
     }
 }
