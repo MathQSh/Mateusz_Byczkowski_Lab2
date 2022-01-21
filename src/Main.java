@@ -1,17 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        method1("Mateusz");
-        method1("Mateusz", "Byczkowski" );
-        method1("Mateusz", "Byczkowski" , 21);
+        int x = method1(1,2);
+        int y = method1(7,8,9);
+        //Pozwolilem sobie uzyc zmiennych poniewaz w przykladzie zadania ich nie wykorzystujemy..
+        System.out.println("wynik: "+ (x + y));
     }
-    public static void method1(String name){
-        System.out.println(name);
+    public static Integer method1(Integer vrA, Integer vrB){
+        return vrA + vrB;
     }
-    public static void method1(String name, String surname){
-        System.out.println(name + " " + surname);
+    public static Integer method1(Integer vrA , Integer vrB , Integer vrC){
+        return vrA + vrB + vrC;
     }
-    public static void method1(String name, String surname, Integer age){
-        System.out.println(name + " " + surname + " " + age);
-    }
-
 }
+
+
